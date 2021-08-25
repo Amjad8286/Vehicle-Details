@@ -1,0 +1,1151 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+   <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+      <link href="{% static 'css/datepicker.css' %}" rel="stylesheet" type="text/css" />
+      <link href="{% static 'css/jquery.dataTables.min.css' %}" rel="stylesheet" type="text/css" />
+      <title>Vehicles Details</title>
+      <style>
+      </style>
+   </head>
+   <body class="dashboard m-page--fluid">
+      <div class="index-mainbox">
+         <div class="">
+            <div class="add-sender-domain-modal-main"></div>
+            <div class="index-mainbox-left-ctnr">
+               <div class="display-flex-ctnr-lft">
+                  <div class="policy_logo">            
+                     <a class="logo" href="dashboard.html">
+                     <img src="{% static 'images/star-logo.png' %}">
+                     </a>
+                     <a href="javascript:;"  class="toggler--left">
+                     <span></span>
+                     </a>
+                     <a href="javascript:;"  class="m-brand__toggler--left">
+                     <span></span>
+                     </a>
+                     <a class="header-toggler"> 
+                     <span></span>
+                     <span></span>
+                     <span></span>
+                     </a>
+                  </div>
+               </div>
+               <button class="add-sender-domain-modal-box-heading-close" id="close-add-sender-domain">x</button>
+               <div class="index-mainbox-left">
+                  <ul>
+                     <li  class="active"><a href="javacsript:void(0);"><i class="icons la-home" aria-hidden="true"></i> <span> Dashboard </span></a></li>
+                     <li><a href="javacsript:void(0);"><i class="icons la-user"></i> <span>Referral center </span></a></li>
+                     <li><a href="javacsript:void(0);"><i class="icons la-hand-pointer" aria-hidden="true"></i> <span>Portfolio </span> </a></li>
+                     <li><a href="javacsript:void(0);"><i class="icons la-money-check-alt" aria-hidden="true"></i> <span>Funds & ledger </span> </a></li>
+                     <li><a href="javacsript:void(0);"><i class="icons la-share-square" aria-hidden="true"></i> <span>Reports</span></a></li>
+                     <li><a href="javacsript:void(0);"><i class="icons la-rupee-sign" aria-hidden="true"></i> <span>Subscriptions </span> </a></li>
+                     <li><a href="javacsript:void(0);"><i class="icons la-file-alt" aria-hidden="true"></i> <span>Help & support </span> </a></li>
+                     <li><a href="javacsript:void(0);"><i class="icons la-landmark" aria-hidden="true"></i> <span>Stock market education</span> </a></li>
+                  </ul>
+               </div>
+            </div>
+            <div class="index-mainbox-right">
+               <div class="policy-header">
+                  <div class="display-flex-ctnr">
+                     <div class="policy-header-ctnr-lft">
+                        <div class="header-left">
+                           <ul>
+                              <li>                                                
+                                 <label class="switch">
+                                 <input type="checkbox">
+                                 <span class="slider round"></span>
+                                 </label>
+                              </li>
+                              <li class="p-0">
+                                 <div class="divider"></div>
+                              </li>
+                              <li>
+                                 <a>
+                                 <i class="real-track icons"></i>  Track real time orders
+                                 </a>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="display-flex-ctnr-rgt">
+                        <div class="policy_logo_toolbar">
+                           <div class="header-right text-right">
+                              <ul>
+                                 <li class=""><a href="#"><i class="Mutual-funds icons"></i>  Mutual funds</a></li>
+                                 <li class=""><a href="#"> <i class="Invest-portfolio icons"></i>  Invest in portfolio</a></li>
+                                 <li class=""><a href="#"><i class="Trading-ideas icons"></i>  Trading ideas</a></li>
+                                 <li class="p-0">
+                                    <div class="divider"></div>
+                                 </li>
+                                 <li>
+                                    <a href="#" class="m-dropdown__toggle">RV31574<span class="user-img">SA</span> </a>
+                                    <div class="signout-pop">
+                                       <span class="m-dropdown__arrow m-dropdown__arrow--right m-dropdown__arrow--adjust"></span>
+                                       <div class="m-card-user border-bottom">
+                                          <div class="m-card-user__details">
+                                             <span class="m-card-user__name m--font-weight-500">
+                                             Sarfarz
+                                             </span>
+                                             <a href="" class="m-card-user__email m--font-weight-300 m-link">
+                                             sarfarz@sam.co.in
+                                             </a>
+                                          </div>
+                                       </div>
+                                       <div class="m-card-user border-bottom logout-cntr">
+                                          <ul>
+                                             <li>
+                                                <a><i class="icons profile-icon" aria-hidden="true"></i> My profile</a>
+                                             </li>
+                                             <li>
+                                                <a><i class="icons settting-icon" aria-hidden="true"></i> Account settings.</a>
+                                             </li>
+                                          </ul>
+                                       </div>
+                                       <div class="m-card-user border-bottom logout-cntr">
+                                          <ul>
+                                             <li>
+                                                <a><i class="icons family-login-icon" aria-hidden="true"></i> Family login</a>
+                                             </li>
+                                             <li>
+                                                <a><i class="icons logout-icon" aria-hidden="true"></i> Logout</a>
+                                             </li>
+                                          </ul>
+                                       </div>
+                                    </div>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="row mt-4">
+                  <div class="col-lg-12  text-center">
+                     <div class="alert alert-danger">
+                        <strong>Danger!</strong> This alert box could indicate a dangerous or potentially negative action.  <a href="#">Click here</a>
+                     </div>
+                  </div>
+               </div>
+               <div class="row mt-4">
+                  <div class="col-md-12">
+                     <nav class="breacrumbs" aria-label="breadcrumb">
+                        <div>
+                           <h3 class="breadcream-text">Dashboard </h3>
+                           <ol class="breadcrumb breadcream">
+                              <li class="breadcrumb-item"><a href="#">Home</a></li>
+                              <li class="breadcrumb-item active" aria-current="page">Data</li>
+                           </ol>
+                        </div>
+                     </nav>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-md-12">
+                  </div>
+               </div>
+               <div class="row mt-4">
+                  <div class="col-lg-12">
+                     <h2 class="border-bottom">Button Type</h2>
+                     <div class="mt-2">
+                        <button type="button" class="btn btn-default">Default</button>
+                        <button type="button" class="btn btn-primary">Primary</button>
+                        <button type="button" class="btn btn-sucess">Sucess</button>
+                        <button type="button" class="btn btn-default btn-lg">Default</button>
+                        <button type="button" class="btn btn-primary btn-lg">Primary</button>
+                        <button type="button" class="btn btn-sucess btn-lg">Sucess</button>
+                        <button type="button" class="btn btn-outline-primary btn-lg">Primary</button>
+                        <button type="button" class="btn btn-outline-sucess btn-lg">Sucess</button>
+                        <button type="button" class="btn btn-sucess btn-lg"><i class="icons plus-icon"></i> Primary</button>
+                        <a href="" class="link-primary mt-2">View All Portfolio <i class="icons arrow-right"></i></a>
+                     </div>
+                  </div>
+               </div>
+               <div class="row mt-4">
+                  <div class="col-lg-12">
+                     <h2 class="border-bottom">Modal Design</h2>
+                     <div class="mt-2">                        
+                        <button type="button" class="btn btn-primary btn-lg btn-open-modal" data-target="#myModal1">Primary</button>
+                        <button type="button" class="btn btn-primary btn-lg btn-open-modal" data-target="#myModal2">Primary</button>
+                     </div>
+                  </div>
+               </div>
+               <div class="row mt-4">
+                  <div class="col-lg-12">
+                     <h2 class="border-bottom">Navigation Tabs</h2>
+                     <div class="">
+                        <div class="tab-content-item">
+                           <ul class="nav nav-tabs new-tab mt-0" id="myTab" role="tablist">
+                              <li class="nav-item active">
+                                 <a class="nav-link" href="#home" >Margin Margin</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="#profile">Open Position</a>
+                              </li>
+                           </ul>
+                           <div class="tab-content  data-tabs">
+                              <div class="tab-pane show active tab-list" id="home">
+                                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                              </div>
+                              <div class="tab-pane tab-list" id="profile">
+                                 <p>  when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="row mt-4">
+                  <div class="col-lg-12">
+                     <h2 class="border-bottom">Form</h2>
+                     <div class="mt-2">
+                        <form class="">
+                           <div class="row">
+                              <div class="col-lg-12">
+                                 <div class="row form-inline">
+                                    <div class="col">
+                                       <div class="form-group">
+                                          <label >Name</label> 
+                                          <select class="form-control" id="example1">
+                                             <option>1</option>
+                                             <option>2</option>
+                                             <option>3</option>
+                                             <option>4</option>
+                                             <option>5</option>
+                                          </select>
+                                       </div>
+                                    </div>
+                                    <div class="col">
+                                       <div class="form-group">
+                                          <label>Exchange Segment</label> 
+                                          <select class="form-control" id="example2">
+                                             <option>1</option>
+                                             <option>2</option>
+                                             <option>3</option>
+                                             <option>4</option>
+                                             <option>5</option>
+                                          </select>
+                                       </div>
+                                    </div>
+                                    <div class="col">
+                                       <div class="form-group">
+                                          <label>Financial Year</label> 
+                                          <input type="tel" class="form-control"  placeholder="Mobile">
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="row">
+                              <div class="col-lg-12">
+                                 <div class="row form-inline">
+                                    <div class="col">
+                                       <div class="form-group">
+                                          <label>Search</label>
+                                          <div class="input-group-append">
+                                             <input type="text" class="form-control" placeholder="Search">
+                                             <span class="icons search-icon"></span>
+                                             <!-- <div class="searchdv">
+                                                <ul>
+                                                    <li>Axis bank</li>
+                                                </ul>
+                                                </div> -->
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="col">
+                                       <div class="form-group">
+                                          <label >Calendar</label> 
+                                          <div class="input-group-append">
+                                             <input id="datepicker" data-date-format="mm-dd-yyyy" type="text" class="form-control" placeholder="Pick Date">                                        
+                                             <span class="icons calendar-icon"></span>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="col">
+                                       <div class="form-group">
+                                          <label>Calendar 1</label> 
+                                          <div class="input-group-append">
+                                             <input id="datepicker1" data-date-format="mm-dd-yyyy" type="text" class="form-control-blue" placeholder="Pick Date">                                        
+                                             <span class="icons calendar-icon"></span>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="row">
+                              <div class="col-lg-12">
+                                 <div class="">
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                 </div>
+                              </div>
+                           </div>
+                        </form>
+                     </div>
+                  </div>
+               </div>
+               <div class="row mt-4">
+                  <div class="col-lg-12">
+                     <h2 class="border-bottom">Typography with input</h2>
+                     <div class="mt-4">
+                        <div class="row">
+                           <div class="col-md-12">
+                              <div class="border-bottom display-flex">
+                                 <h2 class="">Your assets <span> (as on 08 Jan, 2020) </span></h2>
+                                 <div class="form-group ml-auto">
+                                    <div class="input-group-append">
+                                       <input id="datepicker2" data-date-format="mm-dd-yyyy" type="text" class="form-control-blue" placeholder="Pick Date">                                        
+                                       <span class="icons calendar-icon"></span>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="row mt-4">
+                  <div class="col-lg-12">
+                     <h2 class="border-bottom">Icons</h2>
+                     <div class="mt-2">
+                        <div class="row">
+                           <div class="col-md-12">
+                              <div class="display-flex">
+                                 <i class="icons delete-icon" aria-hidden="true"></i>
+                                 <i class="icons edit-icon mr-1" aria-hidden="true"></i>
+                                 <i class="icons view-icon mr-1" aria-hidden="true"></i>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="row mt-4">
+                  <div class="col-lg-12">
+                     <h2 class="border-bottom">Simple Table Design</h2>
+                     <div class="">
+                        <div class="table-responsive mb-3">
+                           <table class="table table-striped">
+                              <thead>
+                                 <tr>
+                                    <th>Sr.</th>
+                                    <th>Script Name</th>
+                                    <th>ISIN</th>
+                                    <th>Total Qty.</th>
+                                 </tr>
+                              </thead>
+                              <tbody>
+                                 <tr>
+                                    <td>1 </td>
+                                    <td>Indiabulls Real Estate Limited</td>
+                                    <td>INE040H01021</td>
+                                    <td>100</td>
+                                 </tr>
+                                 <tr>
+                                    <td>2 </td>
+                                    <td>Tata Steel Limited</td>
+                                    <td>INE040H01021</td>
+                                    <td>15</td>
+                                 </tr>
+                                 <tr>
+                                    <td>3 </td>
+                                    <td>IDFC Bank Limited</td>
+                                    <td>INE040H01021</td>
+                                    <td>80</td>
+                                 </tr>
+                                 <tr>
+                                    <td>4 </td>
+                                    <td>Indiabulls Housing Finance Limited</td>
+                                    <td>INE040H01021</td>
+                                    <td>70</td>
+                                 </tr>
+                                 <tr>
+                                    <td>5 </td>
+                                    <td>Supreme Industries Limited</td>
+                                    <td>INE040H01021</td>
+                                    <td>1</td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="row mt-4">
+                  <div class="col-lg-12">
+                     <h2 class="border-bottom">Data Table Design</h2>
+                     <div class="mt-2">
+                        <table id="example" class="display" style="width:100%">
+                           <thead>
+                              <tr>
+                                 <th>Name</th>
+                                 <th>Position</th>
+                                 <th>Office</th>
+                                 <th>Age</th>
+                                 <th>Start date</th>
+                                 <th>Salary</th>
+                              </tr>
+                           </thead>
+                           <tbody>
+                              <tr>
+                                 <td>Tiger Nixon</td>
+                                 <td>System Architect</td>
+                                 <td>Edinburgh</td>
+                                 <td>61</td>
+                                 <td>2011/04/25</td>
+                                 <td>$320,800</td>
+                              </tr>
+                              <tr>
+                                 <td>Garrett Winters</td>
+                                 <td>Accountant</td>
+                                 <td>Tokyo</td>
+                                 <td>63</td>
+                                 <td>2011/07/25</td>
+                                 <td>$170,750</td>
+                              </tr>
+                              <tr>
+                                 <td>Ashton Cox</td>
+                                 <td>Junior Technical Author</td>
+                                 <td>San Francisco</td>
+                                 <td>66</td>
+                                 <td>2009/01/12</td>
+                                 <td>$86,000</td>
+                              </tr>
+                              <tr>
+                                 <td>Cedric Kelly</td>
+                                 <td>Senior Javascript Developer</td>
+                                 <td>Edinburgh</td>
+                                 <td>22</td>
+                                 <td>2012/03/29</td>
+                                 <td>$433,060</td>
+                              </tr>
+                              <tr>
+                                 <td>Airi Satou</td>
+                                 <td>Accountant</td>
+                                 <td>Tokyo</td>
+                                 <td>33</td>
+                                 <td>2008/11/28</td>
+                                 <td>$162,700</td>
+                              </tr>
+                              <tr>
+                                 <td>Brielle Williamson</td>
+                                 <td>Integration Specialist</td>
+                                 <td>New York</td>
+                                 <td>61</td>
+                                 <td>2012/12/02</td>
+                                 <td>$372,000</td>
+                              </tr>
+                              <tr>
+                                 <td>Herrod Chandler</td>
+                                 <td>Sales Assistant</td>
+                                 <td>San Francisco</td>
+                                 <td>59</td>
+                                 <td>2012/08/06</td>
+                                 <td>$137,500</td>
+                              </tr>
+                              <tr>
+                                 <td>Rhona Davidson</td>
+                                 <td>Integration Specialist</td>
+                                 <td>Tokyo</td>
+                                 <td>55</td>
+                                 <td>2010/10/14</td>
+                                 <td>$327,900</td>
+                              </tr>
+                              <tr>
+                                 <td>Colleen Hurst</td>
+                                 <td>Javascript Developer</td>
+                                 <td>San Francisco</td>
+                                 <td>39</td>
+                                 <td>2009/09/15</td>
+                                 <td>$205,500</td>
+                              </tr>
+                              <tr>
+                                 <td>Sonya Frost</td>
+                                 <td>Software Engineer</td>
+                                 <td>Edinburgh</td>
+                                 <td>23</td>
+                                 <td>2008/12/13</td>
+                                 <td>$103,600</td>
+                              </tr>
+                              <tr>
+                                 <td>Jena Gaines</td>
+                                 <td>Office Manager</td>
+                                 <td>London</td>
+                                 <td>30</td>
+                                 <td>2008/12/19</td>
+                                 <td>$90,560</td>
+                              </tr>
+                              <tr>
+                                 <td>Quinn Flynn</td>
+                                 <td>Support Lead</td>
+                                 <td>Edinburgh</td>
+                                 <td>22</td>
+                                 <td>2013/03/03</td>
+                                 <td>$342,000</td>
+                              </tr>
+                              <tr>
+                                 <td>Charde Marshall</td>
+                                 <td>Regional Director</td>
+                                 <td>San Francisco</td>
+                                 <td>36</td>
+                                 <td>2008/10/16</td>
+                                 <td>$470,600</td>
+                              </tr>
+                              <tr>
+                                 <td>Haley Kennedy</td>
+                                 <td>Senior Marketing Designer</td>
+                                 <td>London</td>
+                                 <td>43</td>
+                                 <td>2012/12/18</td>
+                                 <td>$313,500</td>
+                              </tr>
+                              <tr>
+                                 <td>Tatyana Fitzpatrick</td>
+                                 <td>Regional Director</td>
+                                 <td>London</td>
+                                 <td>19</td>
+                                 <td>2010/03/17</td>
+                                 <td>$385,750</td>
+                              </tr>
+                              <tr>
+                                 <td>Michael Silva</td>
+                                 <td>Marketing Designer</td>
+                                 <td>London</td>
+                                 <td>66</td>
+                                 <td>2012/11/27</td>
+                                 <td>$198,500</td>
+                              </tr>
+                              <tr>
+                                 <td>Paul Byrd</td>
+                                 <td>Chief Financial Officer (CFO)</td>
+                                 <td>New York</td>
+                                 <td>64</td>
+                                 <td>2010/06/09</td>
+                                 <td>$725,000</td>
+                              </tr>
+                              <tr>
+                                 <td>Gloria Little</td>
+                                 <td>Systems Administrator</td>
+                                 <td>New York</td>
+                                 <td>59</td>
+                                 <td>2009/04/10</td>
+                                 <td>$237,500</td>
+                              </tr>
+                              <tr>
+                                 <td>Bradley Greer</td>
+                                 <td>Software Engineer</td>
+                                 <td>London</td>
+                                 <td>41</td>
+                                 <td>2012/10/13</td>
+                                 <td>$132,000</td>
+                              </tr>
+                              <tr>
+                                 <td>Dai Rios</td>
+                                 <td>Personnel Lead</td>
+                                 <td>Edinburgh</td>
+                                 <td>35</td>
+                                 <td>2012/09/26</td>
+                                 <td>$217,500</td>
+                              </tr>
+                              <tr>
+                                 <td>Jenette Caldwell</td>
+                                 <td>Development Lead</td>
+                                 <td>New York</td>
+                                 <td>30</td>
+                                 <td>2011/09/03</td>
+                                 <td>$345,000</td>
+                              </tr>
+                              <tr>
+                                 <td>Yuri Berry</td>
+                                 <td>Chief Marketing Officer (CMO)</td>
+                                 <td>New York</td>
+                                 <td>40</td>
+                                 <td>2009/06/25</td>
+                                 <td>$675,000</td>
+                              </tr>
+                              <tr>
+                                 <td>Caesar Vance</td>
+                                 <td>Pre-Sales Support</td>
+                                 <td>New York</td>
+                                 <td>21</td>
+                                 <td>2011/12/12</td>
+                                 <td>$106,450</td>
+                              </tr>
+                              <tr>
+                                 <td>Doris Wilder</td>
+                                 <td>Sales Assistant</td>
+                                 <td>Sydney</td>
+                                 <td>23</td>
+                                 <td>2010/09/20</td>
+                                 <td>$85,600</td>
+                              </tr>
+                              <tr>
+                                 <td>Angelica Ramos</td>
+                                 <td>Chief Executive Officer (CEO)</td>
+                                 <td>London</td>
+                                 <td>47</td>
+                                 <td>2009/10/09</td>
+                                 <td>$1,200,000</td>
+                              </tr>
+                              <tr>
+                                 <td>Gavin Joyce</td>
+                                 <td>Developer</td>
+                                 <td>Edinburgh</td>
+                                 <td>42</td>
+                                 <td>2010/12/22</td>
+                                 <td>$92,575</td>
+                              </tr>
+                              <tr>
+                                 <td>Jennifer Chang</td>
+                                 <td>Regional Director</td>
+                                 <td>Singapore</td>
+                                 <td>28</td>
+                                 <td>2010/11/14</td>
+                                 <td>$357,650</td>
+                              </tr>
+                              <tr>
+                                 <td>Brenden Wagner</td>
+                                 <td>Software Engineer</td>
+                                 <td>San Francisco</td>
+                                 <td>28</td>
+                                 <td>2011/06/07</td>
+                                 <td>$206,850</td>
+                              </tr>
+                              <tr>
+                                 <td>Fiona Green</td>
+                                 <td>Chief Operating Officer (COO)</td>
+                                 <td>San Francisco</td>
+                                 <td>48</td>
+                                 <td>2010/03/11</td>
+                                 <td>$850,000</td>
+                              </tr>
+                              <tr>
+                                 <td>Shou Itou</td>
+                                 <td>Regional Marketing</td>
+                                 <td>Tokyo</td>
+                                 <td>20</td>
+                                 <td>2011/08/14</td>
+                                 <td>$163,000</td>
+                              </tr>
+                              <tr>
+                                 <td>Michelle House</td>
+                                 <td>Integration Specialist</td>
+                                 <td>Sydney</td>
+                                 <td>37</td>
+                                 <td>2011/06/02</td>
+                                 <td>$95,400</td>
+                              </tr>
+                              <tr>
+                                 <td>Suki Burks</td>
+                                 <td>Developer</td>
+                                 <td>London</td>
+                                 <td>53</td>
+                                 <td>2009/10/22</td>
+                                 <td>$114,500</td>
+                              </tr>
+                              <tr>
+                                 <td>Prescott Bartlett</td>
+                                 <td>Technical Author</td>
+                                 <td>London</td>
+                                 <td>27</td>
+                                 <td>2011/05/07</td>
+                                 <td>$145,000</td>
+                              </tr>
+                              <tr>
+                                 <td>Gavin Cortez</td>
+                                 <td>Team Leader</td>
+                                 <td>San Francisco</td>
+                                 <td>22</td>
+                                 <td>2008/10/26</td>
+                                 <td>$235,500</td>
+                              </tr>
+                              <tr>
+                                 <td>Martena Mccray</td>
+                                 <td>Post-Sales support</td>
+                                 <td>Edinburgh</td>
+                                 <td>46</td>
+                                 <td>2011/03/09</td>
+                                 <td>$324,050</td>
+                              </tr>
+                              <tr>
+                                 <td>Unity Butler</td>
+                                 <td>Marketing Designer</td>
+                                 <td>San Francisco</td>
+                                 <td>47</td>
+                                 <td>2009/12/09</td>
+                                 <td>$85,675</td>
+                              </tr>
+                              <tr>
+                                 <td>Howard Hatfield</td>
+                                 <td>Office Manager</td>
+                                 <td>San Francisco</td>
+                                 <td>51</td>
+                                 <td>2008/12/16</td>
+                                 <td>$164,500</td>
+                              </tr>
+                              <tr>
+                                 <td>Hope Fuentes</td>
+                                 <td>Secretary</td>
+                                 <td>San Francisco</td>
+                                 <td>41</td>
+                                 <td>2010/02/12</td>
+                                 <td>$109,850</td>
+                              </tr>
+                              <tr>
+                                 <td>Vivian Harrell</td>
+                                 <td>Financial Controller</td>
+                                 <td>San Francisco</td>
+                                 <td>62</td>
+                                 <td>2009/02/14</td>
+                                 <td>$452,500</td>
+                              </tr>
+                              <tr>
+                                 <td>Timothy Mooney</td>
+                                 <td>Office Manager</td>
+                                 <td>London</td>
+                                 <td>37</td>
+                                 <td>2008/12/11</td>
+                                 <td>$136,200</td>
+                              </tr>
+                              <tr>
+                                 <td>Jackson Bradshaw</td>
+                                 <td>Director</td>
+                                 <td>New York</td>
+                                 <td>65</td>
+                                 <td>2008/09/26</td>
+                                 <td>$645,750</td>
+                              </tr>
+                              <tr>
+                                 <td>Olivia Liang</td>
+                                 <td>Support Engineer</td>
+                                 <td>Singapore</td>
+                                 <td>64</td>
+                                 <td>2011/02/03</td>
+                                 <td>$234,500</td>
+                              </tr>
+                              <tr>
+                                 <td>Bruno Nash</td>
+                                 <td>Software Engineer</td>
+                                 <td>London</td>
+                                 <td>38</td>
+                                 <td>2011/05/03</td>
+                                 <td>$163,500</td>
+                              </tr>
+                              <tr>
+                                 <td>Sakura Yamamoto</td>
+                                 <td>Support Engineer</td>
+                                 <td>Tokyo</td>
+                                 <td>37</td>
+                                 <td>2009/08/19</td>
+                                 <td>$139,575</td>
+                              </tr>
+                              <tr>
+                                 <td>Thor Walton</td>
+                                 <td>Developer</td>
+                                 <td>New York</td>
+                                 <td>61</td>
+                                 <td>2013/08/11</td>
+                                 <td>$98,540</td>
+                              </tr>
+                              <tr>
+                                 <td>Finn Camacho</td>
+                                 <td>Support Engineer</td>
+                                 <td>San Francisco</td>
+                                 <td>47</td>
+                                 <td>2009/07/07</td>
+                                 <td>$87,500</td>
+                              </tr>
+                              <tr>
+                                 <td>Serge Baldwin</td>
+                                 <td>Data Coordinator</td>
+                                 <td>Singapore</td>
+                                 <td>64</td>
+                                 <td>2012/04/09</td>
+                                 <td>$138,575</td>
+                              </tr>
+                              <tr>
+                                 <td>Zenaida Frank</td>
+                                 <td>Software Engineer</td>
+                                 <td>New York</td>
+                                 <td>63</td>
+                                 <td>2010/01/04</td>
+                                 <td>$125,250</td>
+                              </tr>
+                              <tr>
+                                 <td>Zorita Serrano</td>
+                                 <td>Software Engineer</td>
+                                 <td>San Francisco</td>
+                                 <td>56</td>
+                                 <td>2012/06/01</td>
+                                 <td>$115,000</td>
+                              </tr>
+                              <tr>
+                                 <td>Jennifer Acosta</td>
+                                 <td>Junior Javascript Developer</td>
+                                 <td>Edinburgh</td>
+                                 <td>43</td>
+                                 <td>2013/02/01</td>
+                                 <td>$75,650</td>
+                              </tr>
+                              <tr>
+                                 <td>Cara Stevens</td>
+                                 <td>Sales Assistant</td>
+                                 <td>New York</td>
+                                 <td>46</td>
+                                 <td>2011/12/06</td>
+                                 <td>$145,600</td>
+                              </tr>
+                              <tr>
+                                 <td>Hermione Butler</td>
+                                 <td>Regional Director</td>
+                                 <td>London</td>
+                                 <td>47</td>
+                                 <td>2011/03/21</td>
+                                 <td>$356,250</td>
+                              </tr>
+                              <tr>
+                                 <td>Lael Greer</td>
+                                 <td>Systems Administrator</td>
+                                 <td>London</td>
+                                 <td>21</td>
+                                 <td>2009/02/27</td>
+                                 <td>$103,500</td>
+                              </tr>
+                              <tr>
+                                 <td>Jonas Alexander</td>
+                                 <td>Developer</td>
+                                 <td>San Francisco</td>
+                                 <td>30</td>
+                                 <td>2010/07/14</td>
+                                 <td>$86,500</td>
+                              </tr>
+                              <tr>
+                                 <td>Shad Decker</td>
+                                 <td>Regional Director</td>
+                                 <td>Edinburgh</td>
+                                 <td>51</td>
+                                 <td>2008/11/13</td>
+                                 <td>$183,000</td>
+                              </tr>
+                              <tr>
+                                 <td>Michael Bruce</td>
+                                 <td>Javascript Developer</td>
+                                 <td>Singapore</td>
+                                 <td>29</td>
+                                 <td>2011/06/27</td>
+                                 <td>$183,000</td>
+                              </tr>
+                              <tr>
+                                 <td>Donna Snider</td>
+                                 <td>Customer Support</td>
+                                 <td>New York</td>
+                                 <td>27</td>
+                                 <td>2011/01/25</td>
+                                 <td>$112,000</td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                  </div>
+               </div>
+               <div class="row mt-4">
+                  <div class="col-lg-12">
+                     <h2 class="border-bottom">Alerts Design</h2>
+                     <div class="mt-2">
+                        <div class="alert alert-success" id="myAlert">
+                           <strong>Success!</strong> This alert box could indicate a successful or positive action.  <a href="#">Click here</a>  <button type="button" class="close">&times;</button>
+                        </div>
+                        <div class="alert alert-info mt-2">
+                           <strong>Info!</strong> This alert box could indicate a neutral informative change or action.  <a href="#">Click here</a>
+                        </div>
+                        <div class="alert alert-warning mt-2">
+                           <strong>Warning!</strong> This alert box could indicate a warning that might need attention.  <a href="#">Click here</a>
+                        </div>
+                        <div class="alert alert-danger mt-2">
+                           <strong>Danger!</strong> This alert box could indicate a dangerous or potentially negative action. <a href="#">Click here</a>
+                        </div>
+                        <div class="alert alert-success-bg mt-2" id="myAlert">
+                           <strong>Success!</strong> This alert box could indicate a successful or positive action. <a href="#">Click here</a>  <button type="button" class="close">&times;</button>
+                        </div>
+                        <div class="alert alert-info-bg mt-2">
+                           <strong>Info!</strong> This alert box could indicate a neutral informative change or action. <a href="#">Click here</a>
+                        </div>
+                        <div class="alert alert-warning-bg mt-2">
+                           <strong>Warning!</strong> This alert box could indicate a warning that might need attention. <a href="#">Click here</a>
+                        </div>
+                        <div class="alert alert-danger-bg mt-2">
+                           <strong>Danger!</strong> This alert box could indicate a dangerous or potentially negative action. <a href="#">Click here</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="row mt-4">
+                  <div class="col-lg-12">
+                     <h2 class="border-bottom">Tooltip Design</h2>
+                     <div class="mt-2 display-flex">
+                        <div class="mr-1">
+                           <span class="link-primary" tooltip="right" flow="right">Right</span>
+                        </div>
+                        <div class="mr-1">
+                           <span class="link-primary" tooltip=" Down" flow="down">Down</span>
+                        </div>
+                        <div class="mr-1">
+                           <span class="link-primary" tooltip="up">Up</span>
+                        </div>
+                        <div class="mr-1">
+                           <span  class="link-primary" tooltip="left" flow="left">Left</span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="row mt-4">
+                  <div class="col-lg-12">
+                     <h2 class="border-bottom">Typography</h2>
+                     <div class="">
+                        <div class="">
+                           <h1>Heading 1</h1>
+                           <h2>Heading 2</h2>
+                           <h3>
+                           Heading 3</h2>
+                           <p> <strong>paragraph</strong> <br> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="row mt-4">
+                  <div class="col-lg-12  text-center">
+                     <h2 class="bold-heading border-bottom">Accordian</h2>
+                  </div>
+                  <div class="col-lg-12">
+                     <div class="faq-border-top">
+                        <div class="faq-box active">
+                           <div class="faq-question">Lorem ipsum dolor sit amet <i class="arrow"></i></div>
+                           <div class="faq-answer" style="display:block;" >
+                              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+                           </div>
+                        </div>
+                        <div class="faq-box">
+                           <div class="faq-question">Lorem ipsum dolor sit amet <i class="arrow"></i></div>
+                           <div class="faq-answer">
+                              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum                                                      
+                           </div>
+                        </div>
+                        <div class="faq-box">
+                           <div class="faq-question">Lorem ipsum dolor sit amet <i class="arrow"></i></div>
+                           <div class="faq-answer">
+                              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum                                                      
+                           </div>
+                        </div>
+                        <div class="faq-box">
+                           <div class="faq-question">Lorem ipsum dolor sit amet <i class="arrow"></i></div>
+                           <div class="faq-answer">
+                              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum                                                      
+                           </div>
+                        </div>
+                        <div class="faq-box">
+                           <div class="faq-question">Lorem ipsum dolor sit amet <i class="arrow"></i></div>
+                           <div class="faq-answer">
+                              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum                                                      
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="footer">
+         <div class="">
+            <div class="index-mainbox-right">
+               <div class="footer-text">
+                  Copyright © 2020 star All rights reserved.
+               </div>
+            </div>
+         </div>
+      </div>
+      <div id="m_scroll_top" class="m-scroll-top">
+         <i class="icons arrow-up"></i>
+      </div>
+      <div class="loader">
+         <div class="loaders-design">
+            Processing... 
+            <div class="spinner-border text-primary" role="status">
+               <span class="sr-only">Loading...</span>
+            </div>
+         </div>
+      </div>
+      <!-- Modal -->
+      <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+         <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <button type="button" class="close closed"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title" id="myModalLabel">Testing</h4>
+               </div>
+               <div class="modal-body">
+                  <h2>Modal Design</h2>
+               </div>
+            </div>
+         </div>
+      </div>
+       <!-- Modal 2 -->
+       <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog modal-lg" role="document">
+               <div class="modal-content">
+                  <div class="modal-header">
+                     <button type="button" class="close closed" ><span aria-hidden="true">&times;</span></button>
+                     <h4 class="modal-title" id="myModalLabel">Testing 2</h4>
+                  </div>
+                  <div class="modal-body">
+                     <h2>Modal Design 2</h2>
+                  </div>
+                  <div class="modal-footer">
+                        <button type="button" class="btn btn-default closed" >Close</button>
+                        <button type="button" class="btn btn-primary save-changes">Save changes</button>
+                    </div>
+               </div>
+            </div>
+         </div>
+      <div class="modal-ovelay"></div>
+      <script src="{% static 'js/jquery.min.js' %}"></script>   
+      <script src="https://cdn.datatables.net/1.10.9/js/jquery.dataTables.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
+      <script>
+         // Left Menu  //
+         $(document).ready(function() {
+         $(".toggler--left").click(function(e){
+           if($(".m-page--fluid").hasClass("minimus-menu")){                  
+              $(".m-page--fluid").removeClass("minimus-menu");
+              }                                    
+              else{                  
+                 $(".m-page--fluid").addClass("minimus-menu");
+                    
+              }                                                      
+         });
+         $(".m-dropdown__toggle").click(function(){        
+               $(".signout-pop").toggleClass("signout-pop-show");                              
+           });
+         
+         });
+      </script>
+      <script>
+         // Date Picker  //
+         $(function () {
+          $("#datepicker").datepicker({ 
+                autoclose: true, 
+                todayHighlight: true
+          })
+          $("#datepicker1").datepicker({ 
+                autoclose: true, 
+                todayHighlight: true
+          })
+          $("#datepicker2").datepicker({ 
+                autoclose: true, 
+                todayHighlight: true
+          })
+          .datepicker('update', new Date());
+         });          
+      </script>
+      <script>
+         $(document).ready(function(){
+             $(".close").click(function(){
+                 $("#myAlert").alert('close');
+             });
+         });
+      </script>
+      <script>
+         // Navigation Button  //
+         $(".new-tab li a").on("click", function(a) {
+             a.preventDefault(), 
+             $(this).parent().addClass("active"), 
+             $(this).parent().siblings().removeClass("active");
+             var t = $(this).attr("href").split("#")[1];
+             $(this).parents(".tab-content-item").find(".data-tabs").children('.tab-list[id="' + t + '"]').fadeIn(), 
+             $(this).parents(".tab-content-item").find(".data-tabs").children('.tab-list[id!="' + t + '"]').hide()
+         });
+         
+         // accordian Button  //
+         $(".faq-question").on("click", function() {           
+              $(this).siblings(".faq-answer").slideToggle(),            
+              $(this).parent().toggleClass("active"),            
+              $(this).parent().siblings().removeClass("active"),            
+             $(this).parent().siblings().children(".faq-answer").slideUp()
+         });
+         
+         
+         
+      </script>  
+      <script>
+         // Modal Design  //
+         (function($) {
+          $('.btn-open-modal').on('click', function() {  
+          $("body").addClass("modal-open");            
+            var target = $(this).data('target');                 
+            $(".modal-ovelay").fadeIn(),          
+            $(target).addClass('in');
+            $(target).show();
+          });
+         
+          $(".modal").on('click', function(e) {
+            //Check whether click on modal-content    
+            if (e.target !== this)      
+              return;
+            $(".modal-ovelay").fadeOut();
+            $(this).removeClass('in');
+            $(this).hide();   
+            $("body").removeClass("modal-open");          
+          });
+         
+          $(".closed").click(function() {
+          $(".modal").css({
+              display: "none"
+          });             
+          $(".modal-ovelay").fadeOut();                      
+          $(this).removeClass('in');            
+          $("body").removeClass("modal-open"); 
+          
+         });
+          
+         })(jQuery);    
+         
+      </script>
+      <script>
+         $(document).ready(function() {                          
+             $('#example').DataTable({
+                // "dom": '<"toolbar"><"wrapper"flipt>',
+                 language: {
+         oPaginate: {
+         sNext: '<i class="la la-angle-right"></i>',
+         sPrevious: '<i class="la la-angle-left"></i>',
+         sFirst: '<i class="fa fa-step-backward"></i>',
+         sLast: '<i class="fa fa-step-forward"></i>'
+         }
+         },
+             });
+             $('.dataTables_filter').append('<a href="#"><i class="icons PDF-icon"></i></a><a href="#"><i class="icons excel-icon"></i></a>'); 
+             $('.dataTables_filter label').append('<i class="icons search-icon"></i>'); 
+         });
+      </script>
+      <script>
+          $(window).scroll(function(){
+              if($(window).scrollTop() > 300){
+                  $(".m-page--fluid").addClass("m-scroll-top--shown")
+              }
+              else{
+                $(".m-page--fluid").removeClass("m-scroll-top--shown")
+              }
+          });
+          $(".m-scroll-top").on("click", function(){
+              $("html, body").animate({scrollTop:0}, 2000);
+          });
+      </script>
+   </body>
+</html>

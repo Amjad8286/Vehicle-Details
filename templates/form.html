@@ -1,0 +1,71 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block active1 %}
+    class="active"
+{% endblock active1 %}
+{% block body %}
+
+<div class="row mt-4">
+    <div class="col-lg-12">
+       <h2 class="border-bottom">Add Vehicle</h2>
+       <div class="mt-2">
+          <form action="create" method="post">
+             {% csrf_token %}
+             <div class="row">
+                <div class="col-lg-12">
+                   <div class="row form-inline">
+                      <div class="col">
+                         <div class="form-group">
+                            <label>Engine Status</label>
+                            <input type="tel" class="form-control"name="engine_status" placeholder="Amazing" required>
+                         </div>
+                      </div>
+                      <div class="col">
+                         <div class="form-group">
+                            <label>Fuel Level</label>
+                            <input type="tel" class="form-control"name="fuel_level" placeholder="15 Ltr"required>
+                         </div>
+                      </div>
+                      <div class="col">
+                         <div class="form-group">
+                            <label>Tampreture</label>
+                            <input type="tel" class="form-control"name="tampreture" placeholder="35C°" required>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+             </div>
+             <div class="row">
+                <div class="col-lg-12">
+                   <div class="row form-inline">
+                      <div class="col">
+                         <div class="form-group">
+                            <label>Speed</label>
+                            <div class="input-group-append">
+                               <input type="text" class="form-control" name="speed" placeholder="120 Kmh">
+                            </div>
+                         </div>
+                      </div>
+                      <div class="col">
+                         <div class="form-group">
+                            <label>Average Speed</label>
+                            <div class="input-group-append">
+                                <input type="text" class="form-control" name="average_speed" placeholder="50 Kmh">
+                            </div>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+             </div>
+             <div class="row">
+                <div class="col-lg-12">
+                   <div class="">
+                      <button type="submit" class="btn btn-primary">Submit</button>
+                   </div>
+                </div>
+             </div>
+          </form>
+       </div>
+    </div>
+ </div>
+ {% endblock body %}
